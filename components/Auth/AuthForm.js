@@ -70,9 +70,8 @@ export const AuthForm = ({ isLogin, onSubmit, credentialsInvalid }) => {
           <Input
             label="Confirm Password"
             onUpdateValue={updateInputValueHandler.bind(this, 'confirmPassword')}
-            value={enteredConfirmEmail}
-            keyboardType="email-address"
-            isInvalid={emailsDontMatch}
+            value={enteredConfirmPassword}
+            isInvalid={passwordDontMatch}
           />
         )}
       </View>
